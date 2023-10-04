@@ -1,0 +1,27 @@
+.intro {
+padding: 0 10px 10px 10px;
+border: 30px solid tomato;
+background-color: tomato;
+color: #000000;
+text-shadow:  2px 2px 2px crimson;
+font-size: 60px;
+font-family: Roboto;
+text-align: center;
+}
+
+.para1 {
+    font-size: 22px;
+    color: black;
+    font-family: Signika;
+    line-height: 1px;
+    letter-spacing: 1px;
+}
+
+html {
+background-color: #b8a697;
+}
+
+.ProjectsTitle {
+text-align: right;
+text-shadow: 1px 1px 1px crimson;
+}
