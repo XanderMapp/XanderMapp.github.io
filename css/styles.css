@@ -1,34 +1,60 @@
+/* body & container */
+
+body {
+    font-size: 100%;
+    font-family: 'Fira Sans', sans-serif;
+    background: #c4a6b7
+}
 
 .container {
     width: 960px;
     margin: 0 auto;
-    background-color: #ffffff;
 }
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
-.nav-list {
-    list-style-type: disc;
-    background-color: beige;
-    padding: 16px;
-    width: 960px;
+/* typography */
+
+h1 {
+    font-size: 48px;
 }
 
-.about-header, .resume-header {
-    padding: 12px;
-    width: 438px;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+h2 {
+    font-size: 36px;
 }
 
-.about-header {
-    background-color: #bc83ca;
-    margin-right: 36px;
+h3 {
+    font-size: 28px;
 }
 
-.resume-header {
-    background-color: #ab9a9a;
+h4 {
+    font-size: 16px;
 }
+
+.blog-posts img {
+    height: 128px;
+    width: 128px;
+}
+
+.blog-posts p {
+    width: 40%;
+}
+
+/* links */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: palevioletred;
+    margin-right: 2px;
+}
+
