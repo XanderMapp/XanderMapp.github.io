@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,48 +10,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
     <div class="container">
         <header>
+            <div class="image-container">
+                <img src="img/placeholder-logo.PNG" alt="Shelf Logo">
+            </div>
             <nav>
-                <ul>
-                    <li><a href="long-about.html">More About Me</a></li>
-                    <li><a href="art.html">My Art!</a></li>
-                </ul>
+                <a href="long-about.html">A Detailed about me</a>
+                <a href="art.html">My Art</a>
+                <a href="index.html">Homepage</a>
             </nav>
-            <h1>Welcome!</h1>
         </header>
         <main>
-            <div>
+            <section>
                 <h2>About me</h2>
                 <p>
-                    Welcome to my page! I'm Xander, a student studying Computer Software Development at the Northern Alberta Institute of Technology.
+                    Welcome to my page! I'm Xander, a student studying Computer Software Development at the Northern
+                    Alberta Institute of Technology.
                 </p>
-                <div class="blog-posts">
-                    <h3>Blog</h3>
-                    <article>
-                        <h4>Current Project - Shelf</h4>
-                        <img src="img/placeholder-logo.PNG" alt="Shelf Logo">
+
+                <div class="deck-container">
+                    <div class="card-container">
                         <div>
-                            <p class="desc">Shelf is a program for the management of files with a simple syntactical way of execution.</p>
-                            <footer>
-                                <p>Last Github Update - 2023-12-21</p>
-                                <p>Ver 0.1b</p>
-                            </footer>
+                            <h3>Current Project</h3>
+                            <div class="project-details">
+
+                                <a href="https://github.com/XanderMapp/TodosToGithubTaskList" target="_blank"> Project
+                                    Link
+                                </a>
+                            </div>
                         </div>
-                    </article>
+                    </div>
+                    <div class="card-container">
+                        <h3>My Latest Life Updates (Not Often)</h3>
+                    </div>
+                    <div class="card-container">
+                        <h3>About Me</h3>
+
+                        <p>
+                            Find more about me at <a href="long-about.html">Here</a> or the link in the header!
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
-            <h2>Contact me</h2>
-            <ul>
-                <li><a href="https://github.com/XanderMapp"><img src="" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/xander-mapp-048b43291/"><img src="" alt=""></a></li>
-            </ul>
+
+            <h2>My Socials / Where To Find Me</h2>
+
+            <a href="https://github.com/XanderMapp" target="_blank">My Github
+                <div class="image-container">
+                    <img src="img/github.png" alt="Github Logo">
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/xander-mapp-048b43291/" target="_blank"> My LinkedIn
+                <div class="image-container">
+                    <img src="img/LinkedIn.png" alt="LinkedIn Logo">
+                </div>
+            </a>
+
         </footer>
     </div>
 </body>
+
+<script src="./ts/main.ts"></script>
 
 </html>

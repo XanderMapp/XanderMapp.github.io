@@ -1,60 +1,104 @@
-/* body & container */
-
-body {
-    font-size: 100%;
-    font-family: 'Fira Sans', sans-serif;
-    background: #c4a6b7
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px */
 }
 
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #c4a6b7;
+    line-height: 1.5;
+}
+
+/* *** Utitlity *** */
 .container {
-    width: 960px;
-    margin: 0 auto;
+}
+
+.image-container {
+    width: 10%;
 }
 
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
 }
 
-/* typography */
+.deck-container {
+    width: 75%;
+}
 
+
+.card-container {
+    width: calc(75% / 3 - 1rem);
+}
+
+/* Typographic Scales */
 h1 {
-    font-size: 48px;
+    font-size: 4.8rem;
 }
 
-h2 {
-    font-size: 36px;
+/* *** Content *** */
+header, section, footer {
+    width: 75%;
+    margin: 0 auto;
 }
 
-h3 {
-    font-size: 28px;
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
 }
 
-h4 {
-    font-size: 16px;
+header nav {
 }
 
-.blog-posts img {
-    height: 128px;
-    width: 128px;
+nav a {
+    font-size: 2.5rem;
 }
 
-.blog-posts p {
-    width: 40%;
-}
-
-/* links */
-a {
+nav a:visited, 
+nav a:link {
     color: #000;
     text-decoration: none;
 }
 
-a:visited {
-    color: maroon;
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #000;
+    text-decoration: underline;
 }
 
-a:hover {
-    color: palevioletred;
-    margin-right: 2px;
+/* *** Footer *** */
+
+
+
+
+/* *** Media Queries *** */
+@media screen and (max-width: 700px) {
+    /* make header stack */
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem auto;
+    }
 }
 
+@media screen and (min-width: 1280px) {
+    header {
+        max-width: 1280px;
+        margin: 2rem auto;
+    }
+}
+
+/* *** TypeScript Style Use *** */
+.active {
+    width: 20%;
+}
