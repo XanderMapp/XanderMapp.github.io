@@ -1,11 +1,15 @@
-const image = document.querySelector('footer a .image-container');
+// Life update function..
+// grab newest blrub from a list of posts ive made?
 
-image?.addEventListener('mouseover', (event) => {
-    event.preventDefault();
-    image.classList.add('active');
-})
+// const readingList = document.querySelector('.reading-list');
+// const image = document.createElement('image-container');
 
-image?.addEventListener('mouseout', (event) => {
-    event.preventDefault();
-    image.classList.remove('active');
-})
+// const books = [
+//     "book1",
+//     "book2",
+//     "book3"
+// ]
+
+// books.forEach((book) => {
+//     readingList?.appendChild(image);
+// })
